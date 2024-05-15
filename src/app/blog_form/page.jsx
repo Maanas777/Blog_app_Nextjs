@@ -14,7 +14,7 @@ const inputClass =
 
 
 
-const form_new_post = () => {
+const Form_new_post = () => {
 
   let session=useSession()
   let name=session?.data?.user?.name
@@ -115,4 +115,4 @@ const handleSubmit=async(e)=>{
   )
 }
 
-export default form_new_post
+export default Form_new_post

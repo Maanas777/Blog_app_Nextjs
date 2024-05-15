@@ -3,11 +3,11 @@ import React from "react";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
 
 
-const header = () => {
-    let router=useRouter()
+
+const Header = () => {
+   
     let {data:session,status}=useSession()
 
     let user=session?.user?.name
@@ -65,4 +65,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

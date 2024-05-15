@@ -2,6 +2,7 @@
 
 import React from "react";
 import "./page.css";
+import Image from "next/image";
 import { signIn } from "next-auth/react";
 
 const LoginForm = () => {
@@ -18,7 +19,7 @@ const LoginForm = () => {
         <h3>Login Here</h3>
 
         <button className="google-btn" onClick={handlegoogle}>
-          <img width="30" height="30" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
+          <Image width="30" height="30" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
           <span>Login with Google</span>
         </button>
       </form>

@@ -19,7 +19,7 @@ const Comments = (req) => {
     };
 
     getComment();
-  },[]);
+  },[params.id]);
 
   return (
     <div className="mt-8">
