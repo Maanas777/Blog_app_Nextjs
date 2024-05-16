@@ -12,7 +12,7 @@ let token=resuit['next-auth.session-token']
 
 
 if(!token){
-    return NextResponse.redirect(new URL('http://localhost:3000'))
+    return NextResponse.redirect(new URL('https://blog-app-nextjs-tawny.vercel.app'))
 
 }
 else{
