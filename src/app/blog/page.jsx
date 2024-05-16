@@ -30,7 +30,9 @@ const [loading, setloading] = useState(true)
   useEffect(()=>{
 
     async function getBlogs() {
-      const response = await axios.get('/api/blogs');
+      const response = await axios.get('/api/blogs', {
+        cache: "no-store",
+      });
      let data=response?.data
      setblogs(data)
      setloading(false)

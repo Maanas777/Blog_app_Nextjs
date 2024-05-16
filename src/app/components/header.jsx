@@ -6,9 +6,11 @@ import { useSession } from "next-auth/react";
 
 
 
+
 const Header = () => {
    
     let {data:session,status}=useSession()
+
 
     let user=session?.user?.name
 
@@ -23,8 +25,6 @@ const Header = () => {
 
     }
   
-
-
 
   return (
     <header className="bg-orange-500 p-4 ">

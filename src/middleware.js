@@ -8,19 +8,8 @@ export async function middleware(req,res){
     
 let token=resuit['next-auth.session-token']
 
-// const pathname = req.url.pathname;
-// console.log(pathname,"[atttttttttjjjjjjjjjjjjjjjj")
-
-console.log('jelojojfaf')
 
 
-
-
-
-// if (pathname.startsWith("https://accounts.google.com/o/") && token) {
-
-//     return NextResponse.redirect(new URL("http://localhost:3000"));
-//   }
 
 if(!token){
     return NextResponse.redirect(new URL('http://localhost:3000'))
