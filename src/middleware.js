@@ -8,7 +8,7 @@ export async function middleware(req,res){
 
     console.log(req,"requst objecttttttttttttttttttttt    <<<<<<<<<<< ===========   >>>>>>>")
     
-let token=resuit['next-auth.session-token']
+let token=resuit['__Secure-next-auth.session-token']
 
 
 
