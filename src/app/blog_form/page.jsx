@@ -60,7 +60,7 @@ const handleSubmit=async(e)=>{
         if(response.status===200){
            toast.success('Blog created sucessfully')
 
-           router.push('/blog')
+           router.push('/')
 
         }
         else{

@@ -10,7 +10,7 @@ export async function middleware(req,res){
     
 let token=resuit['__Secure-next-auth.session-token']
 
-
+console.log(token,  "token  si  hsfksfkasfko")
 
 
 if(!token){
