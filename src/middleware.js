@@ -5,6 +5,8 @@ import cookie from 'cookie'
 
 export async function middleware(req,res){
     let resuit= cookie.parse(String(req.cookies))
+
+    console.log(req,"requst objecttttttttttttttttttttt    <<<<<<<<<<< ===========   >>>>>>>")
     
 let token=resuit['next-auth.session-token']
 
